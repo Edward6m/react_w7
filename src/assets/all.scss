@@ -1,0 +1,23 @@
+// font-family
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "../../node_modules/bootstrap";
+
+// font-utilites
+@import "./utils/utilities";
+
+// RWD
+// 用 bootstrap reset 棄置
+// @import "./base/reset.scss";
+@import "./base/base";
+
+// layouts
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+// pages
+
+@import "./pages/login.scss";

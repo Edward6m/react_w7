@@ -1,0 +1,130 @@
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+.container {
+  min-height: 100%;
+  /* Ensure the container stretches the full height */
+}
+
+.header {
+  background-color: $white;
+  width: 1548px;
+  border-radius: 200px;
+  margin-top: 64px;
+  margin-bottom: 56px;
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  @media (max-width: 1570px) {
+    max-width: 1338px;
+  }
+
+  @media (max-width: 1399px) {
+    max-width: 1158px;
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 978px;
+  }
+
+  @include pad {
+    max-width: 738px;
+    margin-top: 20px;
+  }
+
+  @include mobile {
+    position: relative;
+    margin-bottom: 0;
+    background-color: $primary-500;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    margin-top: -10px;
+  }
+}
+
+.header-container {
+  max-width: 1296px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1399px) {
+    max-width: 1116px;
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 936px;
+  }
+
+  @include pad {
+    max-width: 696px;
+  }
+
+  @include mobile {
+    max-width: 516px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.admin-offcanvas {
+  bottom: -88vh;
+}
+
+.header {
+  .offcanvas-body {
+    background-color: $white;
+  }
+}
+
+.header-logo {
+  width: 100px;
+
+  @include mobile {
+    width: 160px;
+  }
+}
+
+.header {
+  .dropdown-toggle {
+    &::after {
+      content: none;
+      display: none;
+    }
+  }
+}
+
+.header-dropdown-menu {
+  width: 236px;
+  padding: 24px 48px;
+  border: 3px $white solid;
+  border-radius: 40px;
+
+  a {
+    color: $gray-500;
+    font-weight: 500;
+
+    &:hover {
+      color: $primary-500;
+      font-weight: 600;
+    }
+  }
+}
+
+.header-input-box {
+  border-radius: 50px;
+}
+
+.header-input {
+  outline: none;
+}
