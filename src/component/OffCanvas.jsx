@@ -53,8 +53,8 @@ function OffCanvas() {
   };
 
   const handleDemoLogin = () => {
-    const demoEmail = "dndnomrt@gmail.com";
-    const demoPassword = "alpha612";
+    const demoEmail = "";
+    const demoPassword = "";
     setValue("loginEmail", demoEmail);
     setValue("loginPassword", demoPassword);
     handleLoginSubmit(handleLoginFormSubmit)();
